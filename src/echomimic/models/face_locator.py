@@ -2,11 +2,10 @@ from typing import Tuple
 
 import torch.nn as nn
 import torch.nn.functional as F
-import torch.nn.init as init
 from diffusers.models.modeling_utils import ModelMixin
 
-from src.models.motion_module import zero_module
-from src.models.resnet import InflatedConv3d
+from .motion_module import zero_module
+from .resnet import InflatedConv3d
 
 
 class FaceLocator(ModelMixin):

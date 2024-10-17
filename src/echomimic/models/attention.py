@@ -5,7 +5,6 @@ from typing import Any, Dict, Optional
 import torch
 from diffusers.models.attention import AdaLayerNorm, Attention, FeedForward
 from diffusers.models.embeddings import SinusoidalPositionalEmbedding
-from einops import rearrange
 from torch import nn
 
 

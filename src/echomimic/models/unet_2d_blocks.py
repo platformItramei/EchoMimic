@@ -1,9 +1,7 @@
 # Adapted from https://github.com/huggingface/diffusers/blob/main/src/diffusers/models/unet_2d_blocks.py
 from typing import Any, Dict, Optional, Tuple, Union
 
-import numpy as np
 import torch
-import torch.nn.functional as F
 from diffusers.models.activations import get_activation
 from diffusers.models.attention_processor import Attention
 from diffusers.models.dual_transformer_2d import DualTransformer2DModel
