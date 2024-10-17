@@ -1,10 +1,9 @@
-from PIL import Image
+import pathlib
+
 import cv2
 import numpy as np
-from imageio_ffmpeg import get_ffmpeg_exe
-import pathlib
-import os
-from IPython import embed
+from PIL import Image
+
 
 def pil_to_cv2(pil):
     return cv2.cvtColor(np.array(pil).astype(np.uint8), cv2.COLOR_RGB2BGR)

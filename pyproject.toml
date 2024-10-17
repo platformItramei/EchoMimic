@@ -1,0 +1,29 @@
+[project]
+name = "echomimic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "av==11.0.0",
+    "diffusers==0.24.0",
+    "einops==0.4.1",
+    "facenet-pytorch==2.5.0",
+    "ffmpeg-python==0.2.0",
+    "gradio>=5.1.0",
+    "mediapipe>=0.10.15",
+    "moviepy==1.0.3",
+    "omegaconf==2.3.0",
+    "opencv-python>=4.10.0.84",
+    "torch>=2.0.1,<=2.2.2",
+    "torchaudio>=2.0.2,<=2.2.2",
+    "torchmetrics>=1.4.3",
+    "torchtyping>=0.1.5",
+    "torchvision>=0.15.2,<=0.17.2",
+    "tqdm>=4.66.5",
+    "transformers>=4.38.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

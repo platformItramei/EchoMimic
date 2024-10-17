@@ -3,7 +3,6 @@ from typing import Any, Dict, Optional
 
 import torch
 from einops import rearrange
-
 from src.models.attention import TemporalBasicTransformerBlock
 
 from .attention import BasicTransformerBlock
@@ -150,7 +149,7 @@ class ReferenceAttentionControl:
                     ]
                     modify_norm_hidden_states = torch.cat(
                         [norm_hidden_states] + bank_feas, dim=1
-                    )
+                    ).to(norm_hidden_states.dtype)
                     # Reference Cross-Attention
                     hidden_states_uc = (
                         self.attn1(

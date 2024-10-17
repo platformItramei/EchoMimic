@@ -1,5 +1,5 @@
 import torch
-import numpy as np
+
 
 def get_alpha(alphas_cumprod, timestep):
     timestep_lt_zero_mask = torch.lt(timestep, 0).to(alphas_cumprod.dtype)
