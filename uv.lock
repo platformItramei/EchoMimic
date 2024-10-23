@@ -285,7 +285,7 @@ wheels = [
 
 [[package]]
 name = "diffusers"
-version = "0.24.0"
+version = "0.31.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "filelock" },
@@ -297,9 +297,9 @@ dependencies = [
     { name = "requests" },
     { name = "safetensors" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d7/e0/4419f79ecc9c8006daad1969780b8e860e083c614611bced43dc1ec72fa4/diffusers-0.24.0.tar.gz", hash = "sha256:05dec2b46797b0a8037f621a16cdd6c11c8ccaf1bc1714e544c07f80341c9aa5", size = 1350753 }
+sdist = { url = "https://files.pythonhosted.org/packages/78/5d/156acb741303abbee214926804c5f0d09eacd35d05ad942577e996acdac3/diffusers-0.31.0.tar.gz", hash = "sha256:b1d01a73e45d43a0630c299173915dddd69fc50f2ae8f2ab5de4fd245eaed72f", size = 2308202 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/dc/92/b17949ff6b634bfb93e12ff8753288d6c59edf4366cc5c501377e6373e0c/diffusers-0.24.0-py3-none-any.whl", hash = "sha256:d4507c7cc273594319b052c342ef0dc268fdf9b59a5da3518c900a03c58f9188", size = 1764630 },
+    { url = "https://files.pythonhosted.org/packages/07/7f/53828ff41b86c3274099327627ff5cb7581a2cc9db3bcb39e5212c4140b7/diffusers-0.31.0-py3-none-any.whl", hash = "sha256:cbc498ae63f4abfc7c3a07649cdcbee229ef2f9a9a1f0d19c9bbaf22f8d30c1f", size = 2873496 },
 ]
 
 [[package]]
@@ -329,21 +329,21 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "av", specifier = "==11.0.0" },
-    { name = "diffusers", specifier = "==0.24.0" },
+    { name = "diffusers", specifier = "==0.31.0" },
     { name = "einops", specifier = "==0.4.1" },
     { name = "facenet-pytorch", specifier = "==2.5.0" },
     { name = "ffmpeg-python", specifier = "==0.2.0" },
-    { name = "gradio" },
-    { name = "mediapipe" },
+    { name = "gradio", specifier = ">=5.1.0" },
+    { name = "mediapipe", specifier = ">=0.10.15" },
     { name = "moviepy", specifier = "==1.0.3" },
     { name = "omegaconf", specifier = "==2.3.0" },
-    { name = "opencv-python" },
+    { name = "opencv-python", specifier = ">=4.10.0.84" },
     { name = "torch", specifier = ">=2.0.1,<=2.2.2" },
     { name = "torchaudio", specifier = ">=2.0.2,<=2.2.2" },
-    { name = "torchmetrics" },
-    { name = "torchtyping" },
+    { name = "torchmetrics", specifier = ">=1.4.3" },
+    { name = "torchtyping", specifier = ">=0.1.5" },
     { name = "torchvision", specifier = ">=0.15.2,<=0.17.2" },
-    { name = "tqdm" },
+    { name = "tqdm", specifier = ">=4.66.5" },
     { name = "transformers", specifier = ">=4.38.2" },
 ]
 
